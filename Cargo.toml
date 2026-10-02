@@ -1,0 +1,13 @@
+[package]
+name = "sasl-xoauth2-gnome-online-accounts"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+# rlib is needed for tests
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+async-executor = { version = "1", features = [ "static" ] }
+futures-lite = "2"
+zbus = "5"
